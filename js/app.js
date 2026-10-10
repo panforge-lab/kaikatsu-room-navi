@@ -107,7 +107,7 @@ function shareStoreOnX(storeCode, event) {
   const features = [h3, toast, shower].filter(Boolean).join(' / ');
   
   const text = `快活CLUB ${name}（${pref}）の鍵付完全個室料金・設備をチェック！\n${features ? features + '\n' : ''}\n`;
-  const url = `https://kaikatsu-navi.github.io/kaikatsu-room-navi/?pref=${encodeURIComponent(pref)}&q=${encodeURIComponent(name)}`;
+  const url = `https://panforge-lab.github.io/kaikatsu-room-navi/?pref=${encodeURIComponent(pref)}&q=${encodeURIComponent(name)}`;
   const hashtags = '快活CLUB,完全個室,快活ナビ';
   const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}&hashtags=${encodeURIComponent(hashtags)}`;
   window.open(shareUrl, '_blank', 'noopener,noreferrer');
